@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+  }
+}
+
+.active {
+  @apply bg-white/20 px-3 py-1 text-white rounded-full transition ease-out duration-150 w-full;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  position: absolute;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a2346;
+
+  scroll-behavior: smooth;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 81, 104, 0.5);
+  border-radius: 2px;
+  scroll-behavior: smooth;
+  border: 0.5px solid rgba(255, 255, 255, 0.3)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(37, 37, 37);
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  scroll-behavior: smooth;
+}
+
+:root{
+  --toastify-color-dark: #fdfdfd3e;
+  --toastify-toast-background: #fdfdfd3e;
+}
